@@ -1,0 +1,15 @@
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#analysis {
+  margin: 10px 0;
+  height: 50px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.analysis_item {
+  margin: 0 5px;
+}
