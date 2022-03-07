@@ -9,6 +9,14 @@ function handleFiles(event) {
 
 document.getElementById('upload').addEventListener('change', handleFiles, false);
 
+// Handle sample audio file selection.
+function loadSample() {
+  document.getElementById('src').src = './a-e-d-g-violin.mp3';
+  document.getElementById('music').load();
+
+  processAudio();
+}
+
 var audioContext, sourceNode, analyser, theBuffer, mediaStreamSource, detectorElem, canvasElem, pitchElem, noteElem, detuneElem, detuneAmount;
 var buflen = 4096;
 var buf = new Float32Array(buflen);

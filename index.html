@@ -8,6 +8,7 @@
   <p><b>Upload</b> an audio file and <b>press play</b> to see its frequencies. Based on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API">this tutorial</a>.</p>
   <p>Zeroes out frequencies outside the range of typical music (<a href="https://www.psbspeakers.com/the-frequencies-of-music/">20 Hz - 5 kHz</a>) and boosts frequencies within 2 octaves of middle C (<a href="https://en.wikipedia.org/wiki/Piano_key_frequencies">65 Hz - 1046 Hz</a>).</p>
   <div id="analysis">
+    <span class="analysis_item"><button onclick="loadSample()">Use sample audio</button> or </span>
     <input type="file" id="upload" class="analysis_item"/>
     <audio id="music" controls class="analysis_item">
       <source src="" id="src"/>
